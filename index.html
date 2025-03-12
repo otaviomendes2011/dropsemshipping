@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loja Dropshipping - Eu Amo a Ana</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #8B0000;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 2em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            text-transform: uppercase;
+        }
+
+        header nav a:hover {
+            color: #FFC0CB;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Produtos */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .product {
+            background: white;
+            color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img:hover {
+            transform: scale(1.05);
+        }
+
+        .product h3 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .product .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #8B0000;
+        }
+
+        /* Seção de Testemunhos */
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            font-size: 1.2em;
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.1em;
+        }
+
+        footer a {
+            color: #FFC0CB;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Eu Amo a Ana</div>
+        <nav>
+            <a href="#products">Produtos</a>
+            <a href="#testimonials">Testemunhos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Bem-vindo à Loja Dropshipping!</h2>
+        <p>Encontre produtos incríveis com entrega rápida e pagamento seguro.</p>
+    </div>
+
+    <div id="products" class="container">
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Smartphone">
+            <h3>Smartphone X</h3>
+            <p>Alta performance e design elegante.</p>
+            <p class="price">R$ 2.999,00</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Fone de Ouvido">
+            <h3>Fone de Ouvido Pro</h3>
+            <p>Som imersivo com cancelamento de ruído.</p>
+            <p class="price">R$ 499,00</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Relógio Inteligente">
+            <h3>Relógio Inteligente</h3>
+            <p>Acompanhe sua saúde e notificações em tempo real.</p>
+            <p class="price">R$ 899,00</p>
+        </div>
+    </div>
+
+    <div id="testimonials" class="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonial">
+            "Produtos de qualidade incrível! Atendimento rápido e entrega sem problemas. Super recomendo!"
+            <br><strong>- João Silva</strong>
+        </div>
+        <div class="testimonial">
+            "Comprei o smartphone e não me arrependi. O site é super confiável e a entrega foi bem rápida."
+            <br><strong>- Maria Oliveira</strong>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Eu Amo a Ana. Todos os direitos reservados.</p>
+        <a href="#contact">Contato</a>
+        <a href="#">Política de Privacidade</a>
+    </footer>
+</body>
+</html>
